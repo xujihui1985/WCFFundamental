@@ -1,0 +1,107 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvalServiceLibrary", "EvalServiceLibrary\EvalServiceLibrary.csproj", "{15B3E0D2-6217-493A-A690-158C497F5318}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{BA7AE180-9942-46E3-828D-8AF86105D54C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{15B3E0D2-6217-493A-A690-158C497F5318} = {15B3E0D2-6217-493A-A690-158C497F5318}
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "EvalServiceSite", "http://localhost:1433", "{136CFEAA-BFB4-46DA-8804-5FCF4EAA15FE}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{15b3e0d2-6217-493a-a690-158c497f5318}|EvalServiceLibrary.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_1433"
+		Debug.AspNetCompiler.PhysicalPath = "EvalServiceSite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_1433\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_1433"
+		Release.AspNetCompiler.PhysicalPath = "EvalServiceSite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_1433\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "EvalServiceSite\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvalServiceHost", "EvalServiceHost\EvalServiceHost.csproj", "{35E97BF6-4683-48A7-AA99-1F7F8D55EE74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsServiceHost", "WindowsServiceHost\WindowsServiceHost.csproj", "{2FC91533-0189-45D0-8009-818C1B3EE666}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServiceHost", "WebServiceHost\WebServiceHost.csproj", "{51DE4DD2-1A10-4342-B0E9-B6EABA2AB48F}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "EvalServiceWebService", "http://localhost:1588", "{715F7D8C-8E58-4762-999E-DC25F906C6C6}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{15b3e0d2-6217-493a-a690-158c497f5318}|EvalServiceLibrary.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_1588"
+		Debug.AspNetCompiler.PhysicalPath = "EvalServiceWebService\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_1588\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_1588"
+		Release.AspNetCompiler.PhysicalPath = "EvalServiceWebService\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_1588\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "EvalServiceWebService\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientCallRestful", "ClientCallRestful\ClientCallRestful.csproj", "{FC738832-BD49-4D99-9527-0FCC9CB3149D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA7AE180-9942-46E3-828D-8AF86105D54C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA7AE180-9942-46E3-828D-8AF86105D54C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA7AE180-9942-46E3-828D-8AF86105D54C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA7AE180-9942-46E3-828D-8AF86105D54C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{136CFEAA-BFB4-46DA-8804-5FCF4EAA15FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{136CFEAA-BFB4-46DA-8804-5FCF4EAA15FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{136CFEAA-BFB4-46DA-8804-5FCF4EAA15FE}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{136CFEAA-BFB4-46DA-8804-5FCF4EAA15FE}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{35E97BF6-4683-48A7-AA99-1F7F8D55EE74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35E97BF6-4683-48A7-AA99-1F7F8D55EE74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35E97BF6-4683-48A7-AA99-1F7F8D55EE74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35E97BF6-4683-48A7-AA99-1F7F8D55EE74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FC91533-0189-45D0-8009-818C1B3EE666}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FC91533-0189-45D0-8009-818C1B3EE666}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FC91533-0189-45D0-8009-818C1B3EE666}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FC91533-0189-45D0-8009-818C1B3EE666}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51DE4DD2-1A10-4342-B0E9-B6EABA2AB48F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51DE4DD2-1A10-4342-B0E9-B6EABA2AB48F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51DE4DD2-1A10-4342-B0E9-B6EABA2AB48F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51DE4DD2-1A10-4342-B0E9-B6EABA2AB48F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{715F7D8C-8E58-4762-999E-DC25F906C6C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{715F7D8C-8E58-4762-999E-DC25F906C6C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{715F7D8C-8E58-4762-999E-DC25F906C6C6}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{715F7D8C-8E58-4762-999E-DC25F906C6C6}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{FC738832-BD49-4D99-9527-0FCC9CB3149D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC738832-BD49-4D99-9527-0FCC9CB3149D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC738832-BD49-4D99-9527-0FCC9CB3149D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC738832-BD49-4D99-9527-0FCC9CB3149D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

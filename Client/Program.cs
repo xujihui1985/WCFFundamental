@@ -7,27 +7,29 @@ using Client.EvalService;
 
 namespace Client
 {
-   class Program
-   {
-      static void Main(string[] args)
-      {
-         Console.ReadLine();
-         var client = new EvalServiceClient("BasicHttpBinding_IEvalService");
-         client.SubmitEval(new Eval
-                              {
-                                 Comments = "This came from code",
-                                 Submitter = "Sean",
-                                 TimeSubmitted = DateTime.Now
-                              });
-         Console.WriteLine("Save success");
-         Console.WriteLine("Load Evals");
-         var evals = client.GetEvals();
-         foreach (var eval in evals)
-         {
-            Console.WriteLine(eval.Comments);
-         }
-         Console.WriteLine("End load Evals");
-         Console.Read();
-      }
-   }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.ReadLine();
+            var client = new EvalServiceClient("BasicHttpBinding_IEvalService");
+            client.SubmitEval(new Eval
+                                 {
+                                     Comments = "This came from code",
+                                     Submitter = "Sean",
+                                     TimeSubmitted = DateTime.Now
+                                 });
+            Console.WriteLine("Save success");
+            Console.WriteLine("dfffsdf");
+            Console.WriteLine("Load Evals");
+            var evals = client.GetEvals();
+
+            foreach (var eval in evals)
+            {
+                Console.WriteLine(eval.Comments);
+            }
+            Console.WriteLine("End load Evals");
+            Console.Read();
+        }
+    }
 }

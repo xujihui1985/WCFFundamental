@@ -11,7 +11,7 @@ namespace Client
     {
         static void Main(string[] args)
         {
-            Console.ReadLine();
+            
             var client = new EvalServiceClient("BasicHttpBinding_IEvalService");
             client.SubmitEval(new Eval
                                  {
